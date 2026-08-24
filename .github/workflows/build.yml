@@ -1,4 +1,4 @@
-name: Build OpenWrt for specific target and release
+name: 构建和发布固件Build OpenWrt for specific target and release
 
 permissions:
   contents: write
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   #push:
   schedule:
-    - cron: "0 2/3 * * *"
+    - cron: "0 1/12 * * *"
 
 env:
   REMOTE_REPOSITORY: openwrt/openwrt
